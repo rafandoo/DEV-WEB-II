@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script>
+        function pegarValor() {
+            num1 = parseFloat(document.getElementById('num1').value);
+            num2 = parseFloat(document.getElementById('num2').value);
+            total = somar(num1, num2);
+            mostrar(num1, num2, total);
+        }
+
+        function somar(a, b) {
+            return a + b;
+        }
+
+        function mostrar(a, b, soma) {
+            document.write(a + " + " + b + " = " + soma);
+        }
+    </script>
+    <title>Document</title>
+</head>
+<body>
+    <label for="num1">Numero 1</label>
+    <input type="text" id="num1" nome="num1">
+    <label for="num2">Numero 2</label>
+    <input type="text" id="num2" nome="num2">
+    <input type="button" value="ok" onclick="pegarValor()">
+</body>
+</html>
