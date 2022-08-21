@@ -61,7 +61,6 @@
         echo "Latas de Tinta: " . $la . " <br>";
         echo "Valor da Tinta: " . valorTinta($la, $tt) . " <br>";
         echo "Volume: " . volumePiramide($ab, $h) . " <br>";
-
     ?>
 </body>
 </html>
