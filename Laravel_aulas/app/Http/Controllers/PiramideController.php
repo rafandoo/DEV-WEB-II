@@ -44,7 +44,7 @@ class PiramideController extends Controller
         }
     }
 
-    public function piramide($ab, $h, $tt = 1) {
+    public function piramide($ab, $h, $tt) {
         $g = $this->areaLateral($h, $ab);
         $lt = $this->litrosTinta($this->areaTotal($g, $ab));
         $la = $this->latasTinta($lt);
@@ -60,5 +60,9 @@ class PiramideController extends Controller
         echo "Latas de Tinta: " . $la . " <br>";
         echo "Valor da Tinta: " . $this->valorTinta($la, $tt) . " <br>";
         echo "Volume: " . $this->volumePiramide($ab, $h) . " <br>";
+    }
+
+    public function index($ab = 13.89, $h = 41.87, $tt = 3) {
+        PiramideController::piramide($ab, $h, $tt);
     }
 }
