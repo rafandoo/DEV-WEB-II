@@ -3,4 +3,6 @@
 
 ## Atividades :white_check_mark:
 
-[Pintura da Pirâmide](https://github.com/rafandoo/DEV-WEB-II/tree/main/Atividades/ATV_PINTURA_PIRAMIDE)
+[Pintura da Pirâmide](https://github.com/rafandoo/DEV-WEB-II/tree/main/Atividades/pinturaPiramide)
+
+[App de Agenda](https://github.com/rafandoo/DEV-WEB-II/tree/main/Atividades/agendaApp)
