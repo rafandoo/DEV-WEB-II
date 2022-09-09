@@ -1,12 +1,8 @@
-<!DOCTYPE html>
-<html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=, initial-scale=1.0">
-    <title>Agenda - Edit</title>
-</head>
-<body>
+@extends('agenda.layout')
+
+@section('titulo', 'Agenda - Edit')
+
+@section('conteudo')
     <fieldset>
         <form action="{{ route('agenda.update', $agenda[0]['id']) }}" method="post">
             @method('PATCH')
@@ -25,5 +21,4 @@
             <input type="submit" value="Salvar">
         </form>
     </fieldset>
-</body>
-</html>
+@endsection
