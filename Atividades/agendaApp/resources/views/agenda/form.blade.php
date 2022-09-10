@@ -9,8 +9,7 @@
     <input type="tel" id="telefone" name="telefone" value="{{ isset($agenda[0]['telefone']) ? $agenda[0]['telefone'] : '' }}">
     <br><br>
     <label for="email">Email: </label>
-    <input type="email" id="email" name="email" value="{{ isset($agenda[0]['id']) ? $agenda[0]['id'] : 0 }}">
+    <input type="email" id="email" name="email" value="{{ isset($agenda[0]['email']) ? $agenda[0]['email'] : '' }}">
     <br><br>
     <input type="submit" value="Salvar">
-    <a href="{{ route('agenda.index') }}"><button>Voltar</button></a>
 </fieldset>

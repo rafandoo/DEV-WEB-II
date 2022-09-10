@@ -9,6 +9,8 @@
     @endcomponent    
 
     @yield('conteudo')
+
+    @yield('form')
     
 </body>
 </html>
